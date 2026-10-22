@@ -1,10 +1,11 @@
-
 .recipe-card {
+  display: block;
   overflow: hidden;
-  background-color: #818080;
+  background-color: #7612b8;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
   color: #222;
+  text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -44,22 +45,6 @@
 
 .recipe-card__details p {
   margin: 0;
-}
-
-.recipe-card {
-  display: block;
-  overflow: hidden;
-  background-color: #616161;
-  border: 1px solid #e5e5e5;
-  border-radius: 12px;
-  color: #222;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.recipe-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgb(0 0 0 / 8%);
 }
 
 .recipe-card:focus-visible {
