@@ -7,7 +7,6 @@ import Favorites from './pages/Favorites/Favorites.jsx';
 import useFavorites from './hooks/useFavorites.js';
 import useDefaultRecipe from './hooks/useDefaultRecipe.js';
 import ScrollToTop from './components/ScrollToTop.jsx';
-import useSiteSettings from './hooks/useSiteSettings.js';
 
 export default function App() {
   const { recipes, loading, error, addRecipe } = useRecipes();
@@ -16,18 +15,12 @@ export default function App() {
   const recipesPath = defaultRecipeId
     ? `/recipes/${defaultRecipeId}`
     : '/';
-  const {
-    settings: siteSettings,
-    loading: settingsLoading,
-    error: settingsError,
-  } = useSiteSettings();
 
   return (
     <BrowserRouter>
       <ScrollToTop />
       <Header favoriteCount={favorites.favoriteIds.length}
         recipesPath={recipesPath}
-        siteSettings={siteSettings}
       />
 
       <main>

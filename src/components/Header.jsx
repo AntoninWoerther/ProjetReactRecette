@@ -13,14 +13,12 @@ export default function Header({ favoriteCount, recipesPath, siteSettings }) {
 
           <span className="header__brand-text">
             <span className="header__logo">
-              {siteSettings?.name ?? 'Mon site de recettes'}
+              La Cuisine Gourmande
             </span>
 
-            {siteSettings?.slogan && (
-              <span className="header__slogan">
-                {siteSettings.slogan}
-              </span>
-            )}
+            <span className="header__slogan">
+              Des recettes pour tous les jours
+            </span>
           </span>
         </div>
       </div>
