@@ -238,6 +238,6 @@ Ses usages comprennent notamment :
 
 ## 11. Déploiement
 
-Application en ligne : **à compléter si le projet est déployé**.
+Application en ligne : **https://projet-react-recette.vercel.app**.
 
 Dépôt GitHub : **https://github.com/AntoninWoerther/ProjetReactRecette**.
