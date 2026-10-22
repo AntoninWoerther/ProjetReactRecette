@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router';
 import './Header.css';
 
-export default function Header({ favoriteCount, recipesPath, siteSettings }) {
+export default function Header({ favoriteCount, recipesPath}) {
   return (
     <header className="header">
       <div className="header__brand">
