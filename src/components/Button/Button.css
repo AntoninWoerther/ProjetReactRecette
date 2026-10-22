@@ -1,0 +1,76 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.5rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.button:focus-visible {
+  outline: 2px solid #8525cc;
+  outline-offset: 4px;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Bouton principal */
+.button--primary {
+  color: #fff;
+  background: linear-gradient(135deg, #aa3bff, #8525cc);
+  border-color: #8525cc;
+}
+
+.button--primary:hover:not(:disabled) {
+  box-shadow: 0 4px 12px rgb(133 37 204 / 25%);
+}
+
+/* Bouton secondaire */
+.button--secondary {
+  color: #8525cc;
+  background-color: #fff;
+  border-color: #d8b4fe;
+}
+
+.button--secondary:hover:not(:disabled) {
+  background-color: #f7edff;
+  border-color: #8525cc;
+}
+
+/* Bouton de suppression */
+.button--danger {
+  color: #fff;
+  background-color: #dc2626;
+}
+
+.button--danger:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}

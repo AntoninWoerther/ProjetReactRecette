@@ -1,0 +1,134 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  box-sizing: border-box;
+
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #eee5f5;
+  box-shadow: 0 4px 20px rgba(50, 20, 70, 0.08);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.header__brand {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.header__brand-content {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header__brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+}
+
+.header__brand-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #f3ddff, #e8c7ff);
+  border-radius: 15px;
+  font-size: 1.6rem;
+  box-shadow: 0 3px 10px rgba(170, 59, 255, 0.12);
+}
+
+.header__brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.header__logo {
+  color: #8525cc;
+  font-size: 1.3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+}
+
+.header__slogan {
+  color: #786d83;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.header__navigation a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 0.9rem;
+  color: #5e5368;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.header__navigation a:hover {
+  color: #8525cc;
+  background-color: #f5eaff;
+}
+
+.header__navigation a.active {
+  color: #fff;
+  background: linear-gradient(135deg, #aa3bff, #8525cc);
+}
+
+.header__navigation a:focus-visible,
+.header__brand-link:focus-visible {
+  outline: 2px solid #8525cc;
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+  }
+
+  .header__brand-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header__logo {
+    font-size: 1.1rem;
+  }
+
+  .header__navigation {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .header__navigation a {
+    padding: 0.55rem 0.75rem;
+  }
+}
