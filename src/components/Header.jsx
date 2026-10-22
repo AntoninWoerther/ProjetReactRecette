@@ -7,7 +7,7 @@ export default function Header({ favoriteCount, recipesPath, siteSettings }) {
       <div className="header__brand">
         <div className="header__brand-link">
           <span className="header__brand-icon" aria-hidden="true">
-            <icon> </icon>
+            
             🍳
           </span>
 
